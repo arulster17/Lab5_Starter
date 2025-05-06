@@ -20,8 +20,8 @@ function init() {
   hornSelect.addEventListener('input', function () {
     hornChosen = true;
     curHorn = hornSelect.value;
-    let curImage = '/assets/images/' + curHorn + '.svg';
-    let curAudio = '/assets/audio/' + curHorn + '.mp3';
+    let curImage = 'assets/images/' + curHorn + '.svg';
+    let curAudio = 'assets/audio/' + curHorn + '.mp3';
 
     
     hornImage.src = curImage;
@@ -31,16 +31,16 @@ function init() {
   volumeSelect.addEventListener('input', function () {
     let curVolume = volumeSelect.value;
     if (curVolume == 0) {
-      volumeImage.src = '/assets/icons/volume-level-0.svg';
+      volumeImage.src = 'assets/icons/volume-level-0.svg';
     }
     else if (curVolume < 33) {
-      volumeImage.src = '/assets/icons/volume-level-1.svg';
+      volumeImage.src = 'assets/icons/volume-level-1.svg';
     }
     else if (curVolume < 67) {
-      volumeImage.src = '/assets/icons/volume-level-2.svg';
+      volumeImage.src = 'assets/icons/volume-level-2.svg';
     }
     else {
-      volumeImage.src = '/assets/icons/volume-level-3.svg';
+      volumeImage.src = 'assets/icons/volume-level-3.svg';
     }
     hornAudio.volume = curVolume/100;
     
