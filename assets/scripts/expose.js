@@ -3,6 +3,7 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  const jsConfetti = new JSConfetti();
   var hornChosen = false;
   let curHorn = 'select';
   let hornSelect = document.getElementById('horn-select');
@@ -50,7 +51,6 @@ function init() {
     if (!hornChosen) return;
     hornAudio.play();
     if(curHorn == 'party-horn') {
-      const jsConfetti = new JSConfetti();
       jsConfetti.addConfetti();
     }
   });
