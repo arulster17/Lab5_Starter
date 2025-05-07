@@ -4,6 +4,9 @@ Make sure you make a PR to your own repo's main and not the class' repo!! Otherw
 Arul Mathur
 Richard James
 
+https://arulster17.github.io/Lab5_Starter/explore.html
+https://arulster17.github.io/Lab5_Starter/expose.html
+
 Check Your Understanding
 1. Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
 A. No, as there are many parts of sending a message (user interface, database stuff, network stuff) that are integrated in the process of sending one message. It would be better to set up unit testing for those individual things.
