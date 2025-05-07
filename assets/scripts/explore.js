@@ -10,18 +10,16 @@ function init() {
   let textInput = document.getElementById('text-to-speak');
   let faceImage = document.querySelector('#explore img');
   let synth = window.speechSynthesis;
-  let voices = synth.getVoices();
+  let voices = '';
 
-  voiceSelect.addEventListener('mousedown', function() {
-    voiceSelect.innerHTML = '';
+  synth.addEventListener("voiceschanged", () => {
+    voices = synth.getVoices();
     voices = synth.getVoices();
     for (let i = 0; i < voices.length; i++) {
       let newOption = document.createElement("option");
       newOption.text = `${voices[i].name}`;
       voiceSelect.append(newOption);
     }
-    console.log("hi");
-
   });
 
   playButton.addEventListener('click', function() {
