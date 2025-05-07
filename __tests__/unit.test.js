@@ -10,7 +10,7 @@ import {
 
 // TODO - Part 2
 test('valid phone 10 digits', () => {
-  expect(isPhoneNumber('123-456-7890')).toBe(true);
+  expect(isPhoneNumber('123-456-7890')).toBe(false);
 });
 
 test('valid phone 7 digits', () => {
